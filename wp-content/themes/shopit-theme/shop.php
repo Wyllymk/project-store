@@ -22,7 +22,7 @@ get_header();?>
                          <!-- Sale badge-->
                          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                         <!-- Product image-->
-                        <div class="d-flex justify-content-center img-fluid">
+                        <div class="d-flex justify-content-center img-thumbnail img-fluid">
                             <?php the_post_thumbnail('thumbnail');?>
                         </div>
 

@@ -66,7 +66,7 @@ class ContactsReg{
     }
 
     function pass_data_to_db(){
-        if (isset($_POST['submitbtn'])){
+        if (isset($_POST['submitinfo'])){
             $data = array(
                 'fullname'=>$_POST['fullname'],
                 'email'=>$_POST['email'],

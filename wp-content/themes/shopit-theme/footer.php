@@ -11,17 +11,17 @@
     <!-- Right -->
     <div>
       <a href="" class="me-4 text-reset">
-        <img src="wp-content/themes/SHOP-IT/assets/img/facebook.svg" alt="facebook" height="30px"></a>
+        <img src="<?php echo get_template_directory_uri();?>/assets/img/facebook.svg" alt="facebook" height="30px"></a>
       <a href="" class="me-4 text-reset">
-      <img src="wp-content/themes/SHOP-IT/assets/img/github.svg" alt="github" height="30px"></a>
+      <img src="<?php echo get_template_directory_uri();?>/assets/img/github.svg" alt="github" height="30px"></a>
       <a href="" class="me-4 text-reset">
-      <img src="wp-content/themes/SHOP-IT/assets/img/google.svg" alt="google" height="30px"></a>
+      <img src="<?php echo get_template_directory_uri();?>/assets/img/google.svg" alt="google" height="30px"></a>
       <a href="" class="me-4 text-reset">
-      <img src="wp-content/themes/SHOP-IT/assets/img/square-instagram.svg" alt="instagram" height="30px"></a>
+      <img src="<?php echo get_template_directory_uri();?>/assets/img/square-instagram.svg" alt="instagram" height="30px"></a>
       <a href="" class="me-4 text-reset">
-      <img src="wp-content/themes/SHOP-IT/assets/img/square-twitter.svg" alt="twitter" height="30px"></a>
+      <img src="<?php echo get_template_directory_uri();?>/assets/img/square-twitter.svg" alt="twitter" height="30px"></a>
       <a href="" class="me-4 text-reset">
-      <img src="wp-content/themes/SHOP-IT/assets/img/linkedin.svg" alt="linkedin" height="30px"></a>
+      <img src="<?php echo get_template_directory_uri();?>/assets/img/linkedin.svg" alt="linkedin" height="30px"></a>
     </div>
     <!-- Right -->
   </section>
@@ -36,7 +36,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>MOBI MAX
+            <i class="fas fa-gem me-3"></i>MOBI-MAX
           </h6>
           <p>
            Welcome to the most trusted auto spares shop in the whole of East and Central Africa all at affordable prices.
@@ -72,13 +72,13 @@
             Useful links
           </h6>
           <p>
-            <a href="../wordpress" class="text-reset">Home</a>
+            <a href="../project-store" class="text-reset">Home</a>
           </p>
           <p>
-            <a href="../wordpress/?page_id=15" class="text-reset">Shop</a>
+            <a href="../project-store/?page_id=11" class="text-reset">Shop</a>
           </p>
           <p>
-            <a href="../wordpress/?page_id=45" class="text-reset">Login</a>
+            <a href="../project-store/?page_id=31" class="text-reset">Login</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -87,7 +87,7 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> KDS plaze, Kimathi way Nyeri</p>
+          <p><i class="fas fa-home me-3"></i> KDS plaza, Kimathi way Nyeri</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
             mobimax@example.com
