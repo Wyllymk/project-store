@@ -6,9 +6,9 @@
 ?>
  <?php get_header();?>
  <?php
-global $wpdb;
-$table= $wpdb->prefix.'contact';
-$records = $wpdb->get_results("SELECT * FROM $table");
+  global $wpdb;
+  $table= $wpdb->prefix.'contacts';
+  $records = $wpdb->get_results("SELECT * FROM $table");
 ?>
 <style>
       .jumbotron{
@@ -192,11 +192,9 @@ $records = $wpdb->get_results("SELECT * FROM $table");
       <div class="cont-1">
       <label for="fullname">First Name *<br></label><br>
       <div class="cont-1a">
-        <?php 
-        foreach($records as $record){
-        ?>
-        <h4 style="margin: 5px;"><?php echo $record->fname;?></h4>
-         <?php }?>
+        
+        <h4 style="margin: 5px;"><?php echo $records->fullname;?></h4>
+         
       </div>
        <br>
       </div>
@@ -206,7 +204,7 @@ $records = $wpdb->get_results("SELECT * FROM $table");
       <?php 
       foreach($records as $record){
         ?>
-        <h4 style="margin: 5px;"><?php echo $record->lname;?></h4>
+        <h4 style="margin: 5px;"><?php echo $record->fullname;?></h4>
       <?php }?> 
     </div><br>
     </div>
