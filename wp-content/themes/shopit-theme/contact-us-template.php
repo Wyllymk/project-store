@@ -1,12 +1,12 @@
 <?php
 /**
- * Template Name: Contact Registration
+ * Template Name: Contact Us
  */
 
  get_header();?>
-
+<div class="h-100 gradient-form py-5" style="background-color: #eee;">
  <!--Section: Contact v.2-->
-<section class="mb-4">
+<section class="mb-4 container border border-dark p-3">
 
 <!--Section heading-->
 <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
@@ -73,8 +73,8 @@
             </div>
             <!--Grid row-->
             -<div class="row justify-content-center" style="margin-top: 10px;">
-            <div class="col-xs-4 col-sm-4 col-md-4" >
-                <input type="submit" value="Register" name="submitbtn" class="btn btn-primary btn-block">
+            <div class="col-xs-4 col-sm-4 col-md-4 d-flex justify-content-center" >
+                <input type="submit" value="Submit" name="submitinfo" class="btn btn-primary btn-block py-2 px-5">
             </div>
         </div>
     </div>
@@ -89,5 +89,5 @@
 
 </section>
 <!--Section: Contact v.2-->
-
+</section>
  <?php get_footer(); ?>

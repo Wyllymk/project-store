@@ -15,7 +15,7 @@
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
-                  <img src="wp-content/themes/SHOP-IT/assets/img/logo.png"
+                  <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png"
                     style="width: 185px;" alt="logo">
                   <h4 class="mt-1 mb-5 pb-1">Welcome to Mobi-Max</h4>
                 </div>
@@ -42,7 +42,7 @@
 
                   <div class="d-flex align-items-center justify-content-center pb-4" action="../wordpress/?page_id=42" >
                     <p class="mb-0 me-2">Don't have an account?</p>
-                   <a href="../wordpress/?page_id=42"><button type="button" class="btn btn-outline-danger" >Register</button></a> 
+                   <a href="../project-store/?page_id=41"><button type="button" class="btn btn-outline-danger" >Register</button></a> 
                   </div>
 
                 </form>
