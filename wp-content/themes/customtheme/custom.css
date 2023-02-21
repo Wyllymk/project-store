@@ -1,0 +1,22 @@
+
+ul.wishlist-items {
+    list-style: none;
+  }
+  
+  .remove-from-wishlist {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .add-to-wishlist, .add-to-cart {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
