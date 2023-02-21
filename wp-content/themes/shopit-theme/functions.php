@@ -12,18 +12,6 @@ if ( ! file_exists( get_template_directory() . '/inc/class-bootstrap-5-navwalker
 }
 
 /*-------------------------------------------------------------------------*/
-/*                        REGISTER ADD TO CART                             */
-/*-------------------------------------------------------------------------*/
-
-// if ( ! file_exists( get_template_directory() . '/inc/wp-shopping-cart.php' ) ) {
-//     // File does not exist... return an error.
-//     return new WP_Error( 'wp-shopping-cart-missing', __( 'It appears the wp-shopping-cart.php file may be missing.', 'wp-shopping-cart' ) );
-// } else {
-//     // File exists... require it.
-//     require_once get_template_directory() . '/inc/wp-shopping-cart.php';
-// }
-
-/*-------------------------------------------------------------------------*/
 /*                        ENQUEUE ALL THE THINGS                           */
 /*-------------------------------------------------------------------------*/
 
@@ -34,7 +22,7 @@ function wp_custom_styles(){
 add_action('wp_enqueue_scripts', 'wp_custom_styles');
 
 function wp_custom_scripts(){
-    wp_register_script('bootstrap-js', get_template_directory_uri(). 'assets/js/bootstrap.min.js', array(), '5.3.0', true);
+    wp_register_script('bootstrap-js', get_template_directory_uri(). '/assets/js/bootstrap.min.js', array(), '5.3.0', true);
     wp_enqueue_script('bootstrap-js');
 }
 add_action('wp_enqueue_scripts', 'wp_custom_scripts');

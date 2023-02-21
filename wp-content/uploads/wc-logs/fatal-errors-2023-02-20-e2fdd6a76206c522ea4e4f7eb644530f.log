@@ -1,0 +1,33 @@
+2023-02-20T08:23:31+00:00 CRITICAL Cannot redeclare mytheme_add_woocommerce_support() (previously declared in C:\wamp64\www\project-store\wp-content\themes\shop-it-theme\functions.php:110) in C:\wamp64\www\project-store\wp-content\themes\shop-it-theme\woocommerce\woocommerce-functions.php on line 9
+
+2023-02-20T08:23:53+00:00 CRITICAL Uncaught Error: Failed opening required 'ajax-cart/ajax-add-to-cart.php' (include_path='.;C:\php\pear') in C:\wamp64\www\project-store\wp-content\themes\shop-it-theme\woocommerce\woocommerce-functions.php:31
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-includes\class-wp-hook.php(308): register_ajax_cart('')
+#1 C:\wamp64\www\project-store\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\project-store\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\project-store\wp-settings.php(595): do_action('after_setup_the...')
+#4 C:\wamp64\www\project-store\wp-config.php(96): require_once('C:\\wamp64\\www\\p...')
+#5 C:\wamp64\www\project-store\wp-load.php(50): require_once('C:\\wamp64\\www\\p...')
+#6 C:\wamp64\www\project-store\wp-blog-header.php(13): require_once('C:\\wamp64\\www\\p...')
+#7 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#8 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\shop-it-theme\woocommerce\woocommerce-functions.php on line 31
+
+2023-02-20T15:04:28+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Query::have_posts() in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\front-page.php:35
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\project-store\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#3 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\front-page.php on line 35
+
+2023-02-20T15:15:33+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\front-page.php on line 75
+
+2023-02-20T15:17:04+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on bool in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\front-page.php:26
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\project-store\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#3 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\front-page.php on line 26
+

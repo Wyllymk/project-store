@@ -15,6 +15,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon/favicon-32x32.png">
         <title>Shop It Store</title>
         <?php wp_head();?>
+
     </head>
     <body <?php body_class();?>>
 
@@ -77,3 +78,4 @@
           </div><!-- .container -->
 
         </nav><!-- .navbar -->
+       

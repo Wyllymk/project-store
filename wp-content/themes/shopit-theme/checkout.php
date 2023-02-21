@@ -7,8 +7,17 @@
  <?php get_header();?>
  <?php
   global $wpdb;
-  $table= $wpdb->prefix.'contacts';
+  $table= $wpdb->prefix.'customers';
   $records = $wpdb->get_results("SELECT * FROM $table");
+
+ 
+  foreach($records as $record){
+    $firstname = $record->fname;
+    $lastname = $record->lname;
+    $mobile = $record->phone;
+    $location = $record->address;
+  }
+
 ?>
 <style>
       .jumbotron{
@@ -190,22 +199,20 @@
 <div class="cont2">
     <form action="" method="get">
       <div class="cont-1">
-      <label for="fullname">First Name *<br></label><br>
+      <label for="fname">First Name *<br></label><br>
       <div class="cont-1a">
         
-        <h4 style="margin: 5px;"><?php echo $records->fullname;?></h4>
+        <h4 style="margin: 5px;"><?php echo $firstname;?></h4>
          
       </div>
        <br>
       </div>
     <div class="cont-2">
-    <label for="lastname">Last Name *<br></label><br>
+    <label for="lname">Last Name *<br></label><br>
     <div class="first">
-      <?php 
-      foreach($records as $record){
-        ?>
-        <h4 style="margin: 5px;"><?php echo $record->fullname;?></h4>
-      <?php }?> 
+
+        <h4 style="margin: 5px;"><?php echo $lastname;?></h4>
+      
     </div><br>
     </div>
     </form>
@@ -213,21 +220,17 @@
 <div class="cont3">
    <p>Mobile phone number *</p>
    <div class="first">
-      <?php 
-      foreach($records as $record){
-        ?>
-        <h4 style="margin: 5px;"><?php echo $record->phone;?></h4>
-      <?php }?> 
+
+        <h4 style="margin: 5px;"><?php echo $mobile;?></h4>
+
     </div><br>
 </div>
 <div class="cont4">
 <p><label for="delivery">Delivery Address</label></p>
 <textarea name="delivery" id="delivery" cols="40" rows="5">
-  <?php 
-      foreach($records as $record){
-        ?>
-        <?php echo $record->address;?>
-      <?php }?> 
+
+        <?php echo $location;?>
+
   </textarea>
 </div>
 <hr>

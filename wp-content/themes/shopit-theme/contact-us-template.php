@@ -6,10 +6,10 @@
  get_header();?>
 <div class="h-100 gradient-form py-5" style="background-color: #eee;">
  <!--Section: Contact v.2-->
-<section class="mb-4 container border border-dark p-3">
+<section class="mb-4 container card shadow my-5">
 
 <!--Section heading-->
-<h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+<h2 class="h1-responsive font-weight-bold text-center">Contact us</h2>
 <!--Section description-->
 <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly.</p>
 
@@ -72,9 +72,9 @@
                 </div>
             </div>
             <!--Grid row-->
-            -<div class="row justify-content-center" style="margin-top: 10px;">
+            <div class="row justify-content-center" style="margin-top: 10px;">
             <div class="col-xs-4 col-sm-4 col-md-4 d-flex justify-content-center" >
-                <input type="submit" value="Submit" name="submitinfo" class="btn btn-primary btn-block py-2 px-5">
+                <input type="submit" value="Submit" name="submitinfo" class="my-4 btn btn-primary btn-block py-2 px-5">
             </div>
         </div>
     </div>

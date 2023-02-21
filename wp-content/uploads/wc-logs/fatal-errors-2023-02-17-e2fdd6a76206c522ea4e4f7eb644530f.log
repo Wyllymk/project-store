@@ -1,0 +1,96 @@
+2023-02-17T05:42:05+00:00 CRITICAL syntax error, unexpected token "=", expecting ")" in C:\wamp64\www\project-store\wp-content\themes\shopit-exp\sidebar.php on line 3
+
+2023-02-17T11:39:44+00:00 CRITICAL Uncaught Error: Call to undefined function bootscore_wc_get_corrected_terms() in C:\wamp64\www\project-store\wp-content\themes\bootscore-main\woocommerce\checkout\terms.php:14
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\wamp64\www\project-store\wp-content\themes\bootscore-main\woocommerce\checkout\payment.php(49): wc_get_template('checkout/terms....')
+#2 C:\wamp64\www\project-store\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\p...')
+#3 C:\wamp64\www\project-store\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2384): wc_get_template('checkout/paymen...', Array)
+#4 C:\wamp64\www\project-store\wp-includes\class-wp-hook.php(308): woocommerce_checkout_payment('')
+#5 C:\wamp64\www\project-store\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 C:\wamp64\www\project-store\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\wamp64\www\project-store\wp-content\themes\bootscore-main\woocommerce\checkout\form-checkout.php(51): do_action('woocommerce_che...')
+#8 C:\wamp64\www\project-store\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\wamp64\\www\\p...')
+#9 C:\wamp64\www\project-store\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(316): wc_get_template('checkout/form-c...', Array)
+#10 C:\wamp64\www\project-store\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#11 C:\wamp64\www\project-store\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#12 C:\wamp64\www\project-store\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#13 C:\wamp64\www\project-store\wp-includes\shortcodes.php(355): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#14 [internal function]: do_shortcode_tag(Array)
+#15 C:\wamp64\www\project-store\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#16 C:\wamp64\www\project-store\wp-includes\class-wp-hook.php(308): do_shortcode('[woocommerce_ch...')
+#17 C:\wamp64\www\project-store\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#18 C:\wamp64\www\project-store\wp-includes\post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#19 C:\wamp64\www\project-store\wp-content\themes\bootscore-main\page.php(37): the_content()
+#20 C:\wamp64\www\project-store\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\p...')
+#21 C:\wamp64\www\project-store\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\p...')
+#22 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#23 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\bootscore-main\woocommerce\checkout\terms.php on line 14
+
+2023-02-17T12:21:04+00:00 CRITICAL Uncaught TypeError: join(): Argument #1 ($pieces) must be of type array, string given in C:\wamp64\www\project-store\wp-content\themes\my-theme\inc\class-bootstrap-5-navwalker.php:57
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-content\themes\my-theme\inc\class-bootstrap-5-navwalker.php(57): join(' ', NULL)
+#1 C:\wamp64\www\project-store\wp-includes\class-wp-walker.php(147): bootstrap_5_wp_nav_menu_walker->start_el('', Object(WP_Post), 0, Object(stdClass))
+#2 C:\wamp64\www\project-store\wp-includes\class-wp-walker.php(247): Walker->display_element(Object(WP_Post), Array, 2, 0, Array, '')
+#3 C:\wamp64\www\project-store\wp-includes\nav-menu-template.php(622): Walker->walk(Array, 2, Object(stdClass))
+#4 C:\wamp64\www\project-store\wp-includes\nav-menu-template.php(242): walk_nav_menu_tree(Array, 2, Object(stdClass))
+#5 C:\wamp64\www\project-store\wp-content\themes\my-theme\header.php(33): wp_nav_menu(Object(stdClass))
+#6 C:\wamp64\www\project-store\wp-includes\template.php(783): require_once('C:\\wamp64\\www\\p...')
+#7 C:\wamp64\www\project-store\wp-includes\template.php(718): load_template('C:\\wamp64\\www\\p...', true, Array)
+#8 C:\wamp64\www\project-store\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\project-store\wp-content\themes\my-theme\woocommerce.php(1): get_header()
+#10 C:\wamp64\www\project-store\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\p...')
+#11 C:\wamp64\www\project-store\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\p...')
+#12 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#13 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\my-theme\inc\class-bootstrap-5-navwalker.php on line 57
+
+2023-02-17T12:21:36+00:00 CRITICAL Uncaught TypeError: join(): Argument #1 ($pieces) must be of type array, string given in C:\wamp64\www\project-store\wp-content\themes\my-theme\inc\class-bootstrap-5-navwalker.php:57
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-content\themes\my-theme\inc\class-bootstrap-5-navwalker.php(57): join(' ', NULL)
+#1 C:\wamp64\www\project-store\wp-includes\class-wp-walker.php(147): bootstrap_5_wp_nav_menu_walker->start_el('', Object(WP_Post), 0, Object(stdClass))
+#2 C:\wamp64\www\project-store\wp-includes\class-wp-walker.php(247): Walker->display_element(Object(WP_Post), Array, 2, 0, Array, '')
+#3 C:\wamp64\www\project-store\wp-includes\nav-menu-template.php(622): Walker->walk(Array, 2, Object(stdClass))
+#4 C:\wamp64\www\project-store\wp-includes\nav-menu-template.php(242): walk_nav_menu_tree(Array, 2, Object(stdClass))
+#5 C:\wamp64\www\project-store\wp-content\themes\my-theme\header.php(33): wp_nav_menu(Object(stdClass))
+#6 C:\wamp64\www\project-store\wp-includes\template.php(783): require_once('C:\\wamp64\\www\\p...')
+#7 C:\wamp64\www\project-store\wp-includes\template.php(718): load_template('C:\\wamp64\\www\\p...', true, Array)
+#8 C:\wamp64\www\project-store\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#9 C:\wamp64\www\project-store\wp-content\themes\my-theme\woocommerce.php(1): get_header()
+#10 C:\wamp64\www\project-store\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\p...')
+#11 C:\wamp64\www\project-store\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\p...')
+#12 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#13 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\my-theme\inc\class-bootstrap-5-navwalker.php on line 57
+
+2023-02-17T12:44:37+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 132
+
+2023-02-17T12:48:06+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 132
+
+2023-02-17T12:49:15+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 132
+
+2023-02-17T12:49:23+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 132
+
+2023-02-17T12:49:25+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 132
+
+2023-02-17T12:50:28+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 132
+
+2023-02-17T12:50:37+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 132
+
+2023-02-17T12:51:04+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 41
+
+2023-02-17T12:52:07+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\project-store\wp-content\themes\my-theme\page.php on line 41
+
+2023-02-17T15:09:56+00:00 CRITICAL syntax error, unexpected identifier "the_post" in C:\wamp64\www\project-store\wp-content\themes\shop-it-theme\page.php on line 26
+
+2023-02-17T15:25:55+00:00 CRITICAL syntax error, unexpected token "endwhile", expecting end of file in C:\wamp64\www\project-store\wp-content\themes\shop-it-theme\page.php on line 43
+
+2023-02-17T15:35:33+00:00 CRITICAL Uncaught Error: Call to undefined function the_categories() in C:\wamp64\www\project-store\wp-content\themes\shop-it-theme\single.php:22
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\project-store\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#3 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\shop-it-theme\single.php on line 22
+

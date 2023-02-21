@@ -1,0 +1,24 @@
+2023-02-21T05:19:14+00:00 CRITICAL Uncaught Error: Class "Advanced_Woocommerce_Theme_Menus" not found in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\template-parts\header\nav.php:8
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-includes\template.php(785): require()
+#1 C:\wamp64\www\project-store\wp-includes\template.php(718): load_template('C:\\wamp64\\www\\p...', false, Array)
+#2 C:\wamp64\www\project-store\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\header.php(23): get_template_part('template-parts/...')
+#4 C:\wamp64\www\project-store\wp-includes\template.php(783): require_once('C:\\wamp64\\www\\p...')
+#5 C:\wamp64\www\project-store\wp-includes\template.php(718): load_template('C:\\wamp64\\www\\p...', true, Array)
+#6 C:\wamp64\www\project-store\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#7 C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\front-page.php(1): get_header()
+#8 C:\wamp64\www\project-store\wp-includes\template-loader.php(106): include('C:\\wamp64\\www\\p...')
+#9 C:\wamp64\www\project-store\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\p...')
+#10 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#11 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\template-parts\header\nav.php on line 8
+
+2023-02-21T06:19:28+00:00 CRITICAL Uncaught Error: Call to undefined function the_tag() in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\single.php:22
+Stack trace:
+#0 C:\wamp64\www\project-store\wp-includes\template-loader.php(106): include()
+#1 C:\wamp64\www\project-store\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\p...')
+#2 C:\wamp64\www\project-store\index.php(17): require('C:\\wamp64\\www\\p...')
+#3 {main}
+  thrown in C:\wamp64\www\project-store\wp-content\themes\woocommerce-theme\single.php on line 22
+
