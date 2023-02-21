@@ -1,0 +1,24 @@
+2023-02-21T13:32:58+00:00 CRITICAL Uncaught Error: Call to undefined function display_wishlist() in /home/bai/Local Sites/shopit/app/public/wp-content/themes/customtheme/page-wishlist.php:6
+Stack trace:
+#0 /home/bai/Local Sites/shopit/app/public/wp-includes/template-loader.php(106): include()
+#1 /home/bai/Local Sites/shopit/app/public/wp-blog-header.php(19): require_once('/home/bai/Local...')
+#2 /home/bai/Local Sites/shopit/app/public/index.php(17): require('/home/bai/Local...')
+#3 {main}
+  thrown in /home/bai/Local Sites/shopit/app/public/wp-content/themes/customtheme/page-wishlist.php on line 6
+
+2023-02-21T13:38:53+00:00 CRITICAL Uncaught Error: Failed opening required 'functions.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /home/bai/Local Sites/shopit/app/public/wp-content/themes/customtheme/page-wishlist.php:3
+Stack trace:
+#0 /home/bai/Local Sites/shopit/app/public/wp-includes/template-loader.php(106): include()
+#1 /home/bai/Local Sites/shopit/app/public/wp-blog-header.php(19): require_once('/home/bai/Local...')
+#2 /home/bai/Local Sites/shopit/app/public/index.php(17): require('/home/bai/Local...')
+#3 {main}
+  thrown in /home/bai/Local Sites/shopit/app/public/wp-content/themes/customtheme/page-wishlist.php on line 3
+
+2023-02-21T13:47:28+00:00 CRITICAL Uncaught Error: Call to undefined function display_wishlist() in /home/bai/Local Sites/shopit/app/public/wp-content/themes/customtheme/page-wishlist.php:24
+Stack trace:
+#0 /home/bai/Local Sites/shopit/app/public/wp-includes/template-loader.php(106): include()
+#1 /home/bai/Local Sites/shopit/app/public/wp-blog-header.php(19): require_once('/home/bai/Local...')
+#2 /home/bai/Local Sites/shopit/app/public/index.php(17): require('/home/bai/Local...')
+#3 {main}
+  thrown in /home/bai/Local Sites/shopit/app/public/wp-content/themes/customtheme/page-wishlist.php on line 24
+
