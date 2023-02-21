@@ -9,7 +9,7 @@ function custom_wishlist() {
 }
 
 
-add_action('woocommerce_after_shop_loop_item', 'add_to_wishlist_button');
+add_action('shop_loop_item', 'add_to_wishlist_button');
 
 function add_to_wishlist_button() {
     global $product;
